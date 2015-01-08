@@ -1,0 +1,361 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 348px) {
+  /* Under Development images resize */
+  .dev-img {
+    height: 35% !important;
+  }
+}
+
+/* SMALL SCREEN NEWSQUID AND TRUNKTRUNK
+-------------------------------------------------- */
+
+.product-img-sm {
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin-top: 80px;
+  margin-left: 140px;
+}
+
+.nsq-img-sm {
+  background-image: url('assets/images/nsq-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tt-img-sm {
+  background-image: url('assets/images/tt-logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.product-title-sm {
+  margin-top: 130px;
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  /* Under Development images resize */
+  .product-img-sm {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Under Development images resize */
+  .product {
+    height: auto !important;
+  }
+}
+
+/* CAROUSEL RESPONSIVE IMAGE
+-------------------------------------------------- */
+
+.top-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-1 {
+  background-image: url('assets/images/6e609595.jpg');
+}
+
+.slide-2 {
+  background-image: url('assets/images/top1.jpg');
+}
+
+.slide-3 {
+  background-image: url('assets/images/top2.png');
+}
+
+/* CAROUSEL MAIN TITLE
+-------------------------------------------------- */
+
+.main-title {
+  font-size: 5.0vw;
+  text-transform: uppercase;
+}
+
+.carousel-caption {
+  bottom: 110px !important;
+  font-family: 'Source Sans Pro light', sans-serif;
+}
+
+/* PRODUCTS
+-------------------------------------------------- */
+
+.product {
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid #FFF;
+}
+
+.product:hover {
+  border: 2px solid black;
+  padding: none;
+}
+
+.product a {
+  text-decoration: none;
+}
+
+a { color: inherit; }
+
+.product-title {
+  position: absolute;
+  top: 120px;
+  right: 10px;
+}
+
+.product-header {
+  font-size: 50px;
+}
+
+.product-img {
+ position: absolute;
+ width: 250px;
+ height: 250px;
+}
+
+.nsq-img {
+  background-image: url('assets/images/nsq-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 80px;
+  top: 80px;
+}
+
+.tt-img {
+  background-image: url('assets/images/tt-logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 5px;
+  top: 80px;
+}
+
+.dev-project {
+  height: 100px;
+  margin-bottom: 20px;
+  border: 2px solid #FFF;
+  padding: 10px;
+}
+
+.dev-project:hover {
+  border: 2px solid #000;
+}
+
+.dev-img {
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+.dev-text h2 {
+  margin: 0px !important;
+}
+
+.dev-heading {
+  font-size: 50px;
+}
+
+.glyph-size {
+  font-size: 18em;
+}
+
+
+/* mail list
+-------------------------------------------------- */
+
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button:hover {background-color:#777;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}     
+#mc_embed_signup .clear {clear:none; display:inline;}
+
+#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup input.email {display:block; padding:8px 0; margin:0 4% 10px 0; text-indent:5px; width:58%; min-width:130px;}
+#mc_embed_signup input.button {display:block; width:35%; margin:0 0 10px 0; min-width:90px;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc_embed_signup label {
+  text-align: center;
+}
+
+#mc_embed_signup input {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#mc_embed_signup input.email {
+  display: block;
+  padding: 16px 0;
+  margin: 0 4% 10px 0;
+  text-indent: 5px;
+  width: 88%;
+  min-width: 130px;
+  text-align: center;
+}
+
+#mc_embed_signup {
+  background:#fff;
+  clear:left;
+  width:500px;
+}
+
+@media screen and (max-width: 600px) {
+    #mc_embed_signup {
+  width: auto !important;
+  }
+  }
