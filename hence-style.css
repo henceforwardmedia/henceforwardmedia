@@ -39,6 +39,10 @@ footer {
   }
 }
 
+.footer-inline {
+  display: inline-block;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
