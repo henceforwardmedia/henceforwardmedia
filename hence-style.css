@@ -6,6 +6,9 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
   font-family: 'Source Sans Pro', sans-serif !important;
+  background-image: url('assets/images/top7.jpg');
+  background-size: cover;
+
 }
 
 
@@ -14,7 +17,6 @@ body {
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -32,6 +34,15 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+.navbar-wrapper {
+  background-color: #222;
+  border-color: #080808;
 }
 
 
@@ -98,9 +109,6 @@ body {
 
 @media (min-width: 768px) {
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -197,7 +205,7 @@ body {
 }
 
 .slide-1 {
-  background-image: url('assets/images/6e609595.jpg');
+  background-image: url('assets/images/top3.jpg');
 }
 
 .slide-2 {
@@ -205,20 +213,31 @@ body {
 }
 
 .slide-3 {
-  background-image: url('assets/images/top2.png');
+  background-image: url('assets/images/top3.jpg');
 }
 
 /* CAROUSEL MAIN TITLE
 -------------------------------------------------- */
 
 .main-title {
-  font-size: 5.0vw;
+  font-size: 4.5vw;
   text-transform: uppercase;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  text-align: center;
+  font-family: 'Source Sans Pro light', sans-serif;
 }
 
 .carousel-caption {
   bottom: 110px !important;
   font-family: 'Source Sans Pro light', sans-serif;
+}
+
+/*This will work for firefox*/
+@-moz-document url-prefix() {
+  .main-title {
+  font-size: 4.5vw;
+}
 }
 
 /* PRODUCTS
