@@ -55,7 +55,7 @@
             <div class="product-img nsq-img"></div>
               <div class="product-title text-center">
                   <h2 class="product-header"><strong>NEW</strong>SQUID</h2>
-                  <p class="lead">Reader-centric access and payment gateway solutions</p>
+                  <p class="lead tagline">Reader-centric access and payment gateway solutions</p>
               </div>
               </div>
               
@@ -78,14 +78,14 @@
             <div class="product-img tt-img"></div>
               <div class="product-title text-center">
                   <h2 class="product-header"><strong>TRUNKTRUNK</strong></h2>
-                  <p class="lead">Marketplace for brands and journalists</p>
+                  <p class="lead tagline">Marketplace for brands and journalists</p>
               </div>
             </div>
             <div class="visible-md visible-sm">
               <div class="product-img-sm tt-img-sm"></div>
               <div class="product-title-sm pull-left">
                   <h2 class="product-header"><strong>TRUNKTRUNK</strong></h2>
-                  <p class="lead">Marketplace for brands and journalists</p>
+                  <p class="lead tagline">Marketplace for brands and journalists</p>
               </div>
             </div>
               <div class="visible-xs tt-img-xs">
@@ -108,11 +108,28 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- Carusel responsiveness -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vegas/jquery.vegas.js"></script>
+  
+
+  <script type="text/javascript">
+        $(function() {
+      $.vegas({
+        src:'vegas/images/HFMG.jpg'
+      });
+      $.vegas('overlay', {
+        src:'vegas/overlays/05.png'
+      });
+    });
+    </script>
   </body>
 </html>
